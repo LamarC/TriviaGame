@@ -1,0 +1,73 @@
+ header {
+    background-image: url("../images/logo.jpg");
+    background-position: center;
+    background-color: red;
+    border-radius: 30px;
+    background-blend-mode: screen;
+    height: 20vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    border: 2px solid grey;
+    box-shadow: 10px 15px 5px black;
+}
+
+body {
+    background-color: royalblue;
+}
+
+
+h1 {
+    font-family: 'Unlock', cursive;
+    text-align: center;
+    padding: 2px 0px;
+}
+
+.grid {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px 50px 50px 50px;
+    border-radius: 40px;
+    border: 2px solid grey;
+    box-shadow: 10px 15px 5px black;
+}
+
+ .grid #quest {
+    font-family: 'Didact Gothic', sans-serif;
+    text-align: center;
+ }
+
+ .buttns {
+    margin: 0 auto;
+}
+
+#btn1, #btn2, #btn3, #btn4 {
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: royalblue;
+    width: 250px;
+    padding: 18px 60px;
+    white-space: normal;
+    transform: scale(1.0);
+    transition-duration: .3s;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 12px;
+    margin: 10px 40px 10px 0px;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
+    background-color: #0000CC; 
+} 
+
+#btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus {
+    outline: 0;
+}
+
+#progress {
+    color: darkred;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 30px;
+}
