@@ -4,7 +4,7 @@ $(document).ready(function () {
   function setup() {
     index = 0;
     $('#start').append('<button id="startBtn">Start</button>');
-    $('#startBtn').on('click', function () {
+    $('#startBtn').on('click', function() {
       $(this).hide();
       countDown.start();
       loadQuestion(index);
@@ -129,14 +129,38 @@ $(document).ready(function () {
         answerChosen = '3';
       }
 
-      if ((answerChosen === 0) && (questionArray[index].[0] === true)) {
+      if ((answerChosen === '0') && (questionArray[index].[0] === true)) {
         answerCorrect();
       }
 
       else {
         answerWrong();
+      };
+
+      if ((answerChosen === '1') && (questionArray[index].[1] === true)) {
+        answerCorrect();
       }
 
+      else {
+        answerWrong();
+      };
+
+      if ((answerChosen === '2') && (questionArray[index].[2] === true)) {
+        answerCorrect();
+      }
+
+      else {
+        answerWrong();
+      };
+
+      if ((answerChosen === '3') && (questionArray[index].[3] === true)) {
+        answerCorrect();
+      }
+
+      else {
+        answerWrong();
+      };
+      
       $('#question').text('');
       $('#btn0').text('');
       $('btn1').text('');
@@ -146,7 +170,7 @@ $(document).ready(function () {
       if (index < questionArray.length) {
         loadQuestion(index);
       } else {
-        $(".answerchoice").hide();
+        $('choice').hide();
         showScore();
       }
     });
