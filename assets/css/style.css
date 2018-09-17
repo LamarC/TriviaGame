@@ -20,6 +20,7 @@ body {
 
 h1 {
     font-family: 'Unlock', cursive;
+    font-size: 55px;
     text-align: center;
     padding: 2px 0px;
 }
@@ -40,29 +41,66 @@ h1 {
     text-align: center;
  }
 
+ #beginGame {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
+    background-color: red;
+    width: 250px;
+    height: 75px;
+    padding: 30px 60px;
+    white-space: normal;
+    transform: scale(1.0);
+    transition-duration: .2s;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 12px;
+    margin: 10px 40px 10px 0px;
+ }
+
+ #beginGame:hover {
+     background-color: darkred;
+ }
+
+ #beginGame:focus {
+    outline: 0;
+ }
+
+ h2 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 40px;
+    text-align: center;
+ }
+
+ p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 30px;
+    text-align: center;
+ }
+
  .buttns {
     margin: 0 auto;
 }
 
-#btn1, #btn2, #btn3, #btn4 {
+#btn0, #btn1, #btn2, #btn3 {
     font-family: 'Didact Gothic', sans-serif;
     background-color: royalblue;
     width: 250px;
-    padding: 18px 60px;
+    height: 75px;
+    padding: 30px 60px;
     white-space: normal;
     transform: scale(1.0);
-    transition-duration: .3s;
+    transition-duration: .2s;
     color: white;
     border: 1px solid grey;
     border-radius: 12px;
     margin: 10px 40px 10px 0px;
 }
 
-#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
     background-color: #0000CC; 
 } 
 
-#btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus {
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
     outline: 0;
 }
 

@@ -1,40 +1,52 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Trivia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-    <!-- <h1>Marvel</h1> -->
+        <!-- <h1>Marvel</h1> -->
     </header>
     <br>
-        <hr>
+    <hr>
     <div class="grid">
         <div id="trivia">
             <h1>MARVEL FAN QUIZ</h1>
-        
-            <p id="quest"></p>
 
-            <div class="bttns">
+            <div id="start"><span id="startBtn"></span></div>
+
+            <div id="timer"></div>
+
+            <div id="question"><p></p></div>
+            <div id="answers"><p></p></div>
+
+            <br>
+
+            <div class="btns">
+                <button id="btn0"><span id="choice0"></span></button>
                 <button id="btn1"><span id="choice1"></span></button>
                 <button id="btn2"><span id="choice2"></span></button>
                 <button id="btn3"><span id="choice3"></span></button>
-                <button id="btn4"><span id="choice4"></span></button>
-                <!-- <button id="btn5"><span id="choice5"></span></button> -->
             </div>
         </div>
     </div>
-    
-    <script src="./assets/javascript/logic.js"></script>
+
+    <script type="text/javascript" src="./assets/javascript/logic.js "></script>
+    <script type="text/javascript" src="./assets/javascript/timer.js7"></script>
+
 </body>
 <br>
 <hr>
-<footer id="progress">Question #</footer>
+<footer id="progress">Question ...#</footer>
+
 </html>
- 
