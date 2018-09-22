@@ -15,7 +15,8 @@ $(document).ready(function () {
   var wrong = 0;
 
   //Questions 
-  var q1 = {
+   var questionArray = [
+   {
     question: 'Where is Wakanda located?',
     answers: [
       'choice1. Australia',
@@ -24,9 +25,9 @@ $(document).ready(function () {
       'choice4. Antartica'
     ],
     answer: 'choice3. Africa'
-  };
+  },
 
-  var q2 = {
+   {
     question: 'What is the name of the Marvel legend who has made an apperance in all of the Marvel movies?',
     answers: [
       'choice1. Stan Lee',
@@ -35,9 +36,9 @@ $(document).ready(function () {
       'choice4. Hugh Hefner'
     ],
     answer: 'choice1. Stan Lee'
-  };
+  },
 
-  var q3 = {
+   {
     question: 'Which two actors have played the Incredible Hulk in the Marvel Cinematic Universe?',
     answers: [
       'choice1. Edward Norton & Eric Bana',
@@ -46,9 +47,9 @@ $(document).ready(function () {
       'choice4. Edward Norton & Mark Ruffalo'
     ],
     answer: 'choice4. Edward Norton & Mark Ruffalo'
-  };
+  },
 
-  var q4 = {
+   {
     question: 'What power source fuels Tony Stark\'s Iron Man suit?',
     answers: [
       'choice1. The Tesseract ',
@@ -57,9 +58,9 @@ $(document).ready(function () {
       'choice4. The Arkenstone'
     ],
     answer: 'choice2. LARC Reactor'
-  };
+  },
 
-  var q5 = {
+  {
     question: 'In which Marvel movie did Samuel L. Jackson first appear as Nick Fury?',
     answers: [
       'choice1. Iron Man 2',
@@ -68,9 +69,9 @@ $(document).ready(function () {
       'choice4. Iron Man'
     ],
     answer: 'choice4. Iron Man'
-  };
-
-  var questionArray = [q1, q2, q3, q4, q5];
+   }
+  ]
+    
 
   function loadQuestion(questionSelection) {
     console.log(questionSelection);
@@ -129,7 +130,7 @@ $(document).ready(function () {
         answerChosen = '3';
       }
 
-      if ((answerChosen === '0') && (questionArray[index].[0] === true)) {
+      if ((answerChosen === '0') && (questionArray[index][0] === true)) {
         answerCorrect();
       }
 
@@ -137,7 +138,7 @@ $(document).ready(function () {
         answerWrong();
       };
 
-      if ((answerChosen === '1') && (questionArray[index].[1] === true)) {
+      if ((answerChosen === '1') && (questionArray[index][1] === true)) {
         answerCorrect();
       }
 
@@ -145,7 +146,7 @@ $(document).ready(function () {
         answerWrong();
       };
 
-      if ((answerChosen === '2') && (questionArray[index].[2] === true)) {
+      if ((answerChosen === '2') && (questionArray[index][2] === true)) {
         answerCorrect();
       }
 
@@ -153,7 +154,7 @@ $(document).ready(function () {
         answerWrong();
       };
 
-      if ((answerChosen === '3') && (questionArray[index].[3] === true)) {
+      if ((answerChosen === '3') && (questionArray[index][3] === true)) {
         answerCorrect();
       }
 
@@ -173,4 +174,11 @@ $(document).ready(function () {
         $('choice').hide();
         showScore();
       }
+
+
+
+   
     });
+  }
+  }); 
+
